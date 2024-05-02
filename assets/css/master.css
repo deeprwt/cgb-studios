@@ -6701,7 +6701,8 @@ img {
     font-size: 48px;
   }
 }
-.hero__title::after {
+/* remove pro */
+/* .hero__title::after {
   position: absolute;
   content: "Pro";
   width: 70px;
@@ -6716,7 +6717,7 @@ img {
   color: var(--white);
   text-align: center;
   padding-top: 4px;
-}
+} */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero__title::after {
     right: -30px;
@@ -6780,7 +6781,7 @@ img {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .hero__sub-title {
     bottom: -10px;
-    right: -30px;
+    right: -62px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

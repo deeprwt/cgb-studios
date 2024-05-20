@@ -845,13 +845,13 @@ img {
   color: var(--white);
 }
 .dark .main-dropdown {
-  background-color: var(--white);
+  background-color: var(--black);
 }
 .dark .main-dropdown .sub-dropdown {
   background-color: var(--white);
 }
 .dark .main-dropdown li a {
-  color: var(--black-2) !important;
+  color: var(--white-2) !important;
 }
 .dark .main-dropdown li a .menu-text {
   text-shadow: 0 16px 0 var(--black-2) !important;

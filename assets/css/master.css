@@ -844,6 +844,7 @@ img {
 .dark .sec-sub-title {
   color: var(--white);
 }
+
 .dark .main-dropdown {
   background-color: var(--black);
 }
@@ -1049,6 +1050,9 @@ img {
 }
 .dark .service__area-3 .sec-title {
   background-color: var(--d-black-2);
+}
+.max-w{
+  max-width: 1000px!important;
 }
 .dark .service__area-6 {
   background-color: var(--d-black-2);
@@ -9286,7 +9290,7 @@ img {
   }
 }
 .service__content-3 {
-  max-width: 340px;
+  max-width: 640px;
   position: relative;
   z-index: 1;
 }
@@ -13530,7 +13534,7 @@ img {
   background-position: bottom right;
 }
 .portfolio__service .sec-title {
-  max-width: 350px;
+  max-width: 1000px;
   text-indent: 80px;
   text-transform: uppercase;
   opacity: 0;

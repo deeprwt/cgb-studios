@@ -2685,7 +2685,8 @@ img {
 /*----------------------------------------*/
 .main-menu > li, .main-menu-4 > li {
   display: inline-block;
-  margin: 0 38px;
+  /* margin: 0 38px; */
+  margin: 0 24px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu > li, .main-menu-4 > li {

@@ -1025,6 +1025,8 @@ img {
   border-color: var(--bg-line);
 }
 .dark .brand__item {
+  background: rgb(255 255 255 / 56%);
+    backdrop-filter: blur(10px);
   border-color: var(--bg-line);
 }
 .dark .service__area {

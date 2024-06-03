@@ -10,7 +10,7 @@
     <title>About - Axtra</title>
 
     <!-- Fav Icon -->
-    <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.ico" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
@@ -32,8 +32,11 @@
 
   <body class="dark">
     <!-- Cursor Animation -->
-    <div class="cursor1"></div>
-    <div class="cursor2"></div>
+    <!-- <div class="cursor1"></div>
+  <div class="cursor2"></div> -->
+
+    <!-- Testimonial Play Cursor -->
+    <div class="cursor" id="client_cursor">Play</div>
 
     <!-- Preloader -->
     <div class="preloader">
@@ -49,49 +52,6 @@
       </div>
     </div>
 
-    <!-- Switcher Area Start -->
-    <!-- <div class="switcher__area">
-    <div class="switcher__icon">
-      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
-      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-
-    <div class="switcher__items">
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <h2 class="switcher__title">Cursor</h2>
-        </div>
-        <div class="switcher__btn">
-          <select name="cursor-style" id="cursor_style">
-            <option value="1">default</option>
-            <option selected value="2">animated</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <h2 class="switcher__title">mode</h2>
-        </div>
-        <div class="switcher__btn mode-type wc-col-2">
-          <button data-mode="light">light</button>
-          <button class="active" data-mode="dark">dark</button>
-        </div>
-      </div>
-
-      <div class="switcher__item">
-        <div class="switch__title-wrap">
-          <h2 class="switcher__title">Language Support</h2>
-        </div>
-        <div class="switcher__btn lang_dir wc-col-2">
-          <button class="active" data-mode="ltr">LTR</button>
-          <button data-mode="rtl">RTL</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-    <!-- Switcher Area End -->
-
     <!-- Scroll Smoother -->
     <div class="has-smooth" id="has_smooth"></div>
 
@@ -104,20 +64,26 @@
     <header class="header__area-7">
       <div class="header__inner-2">
         <div class="header__logo-2">
-          <a href="index-2.html" class="logo-dark"
-            ><img src="assets/imgs/logo/logo-black.png" alt="Site Logo"
+          <a href="index.html" class="logo-dark"
+            ><img
+              src="assets/imgs/logo/cgb-studios.png"
+              class="mw-100"
+              alt="Site Logo"
           /></a>
-          <a href="index-2.html" class="logo-light"
-            ><img src="assets/imgs/logo/site-logo-white-2.png" alt="Site Logo"
+          <a href="index.html" class="logo-light"
+            ><img
+              src="assets/imgs/logo/cgb-studios.png"
+              class="mw-100"
+              alt="Site Logo"
           /></a>
         </div>
         <div class="header__nav-2">
-          <ul class="main-menu-3 menu-anim">
+          <ul class="main-menu-4 menu-anim">
             <li class="has-megamenu"><a href="index.html">home</a></li>
             <li class="has-megamenu"><a href="about.html">About Us</a></li>
             <li>
               <a href="portfolio.html">services</a>
-              <ul class="main-dropdown">
+              <ul class="main-dropdown rounded">
                 <li><a href="web-development.html">Web Development</a></li>
                 <li>
                   <a href="mobile-application-development.html"
@@ -132,26 +98,32 @@
                 </li>
                 <li><a href="graphic-design.html">Graphic Designing</a></li>
                 <li><a href="seo.html">SEO</a></li>
-                <li><a href="email-marking.html">Email Marketing</a></li>
-                <li><a href="content-writing.html">Content writing</a></li>
+                <li><a href="service-details-dark.html">Email Marketing</a></li>
+                <li>
+                  <a href="service-details-dark.html">Content Writeing</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-megamenu"><a href="#">Startup Consultancy</a></li>
+            <li class="has-megamenu"><a href="#">Startup Support</a></li>
+            <li>
+              <a href="#">Production Studious</a>
+              <ul class="main-dropdown rounded">
+                <li><a href="#">Photography Studios</a></li>
+                <li><a href="#">Advertisement Campaign</a></li>
+                <li><a href="#">Video Campaign</a></li>
+                <li><a href="#">Commercial Movies</a></li>
               </ul>
             </li>
           </ul>
         </div>
-        <div class="header__nav-icon-3">
-          <button class="search-icon" id="search_icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <button class="search-icon" id="search_close">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-          <button id="open_offcanvas">
-            <img src="assets/imgs/icon/menu-black.png" alt="Menubar Icon" />
+        <div class="header__nav-icon-7">
+          <button class="menu-icon-2" id="open_offcanvas">
+            <img src="assets/imgs/icon/menu-dark.png" alt="Menubar Icon" />
           </button>
         </div>
       </div>
     </header>
-
     <!-- Header area end -->
 
     <!-- Offcanvas area start -->
@@ -159,27 +131,31 @@
       <div class="offcanvas__body">
         <div class="offcanvas__left">
           <div class="offcanvas__logo">
-            <a href="index.html"
-              ><img
-                src="assets/imgs/logo/site-logo-white-2.png"
-                alt="Offcanvas Logo"
-            /></a>
+            <!-- <a href="index.html"><img src="assets/imgs/logo/CGB-Studos-logo.png" class="mw-100" alt="Offcanvas Logo"></a> -->
           </div>
           <div class="offcanvas__social">
             <h3 class="social-title">Follow Us</h3>
             <ul>
-              <li><a href="#">Dribbble</a></li>
-              <li><a href="#">Behance</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">YouTube</a></li>
+              <li>
+                <a href="https://www.linkedin.com/company/cgbindia/"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/cgbsolutions_/">Instagram</a>
+              </li>
+              <li>
+                <a href="https://facebook.com/profile.php?id=61552225540134"
+                  >Facebook</a
+                >
+              </li>
+              <li><a href="https://twitter.com/cgb_solutions">Twitter</a></li>
             </ul>
           </div>
           <div class="offcanvas__links">
             <ul>
               <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">contact</a></li>
+              <li><a href="https://www.cgbsolution.com/contact">contact</a></li>
               <li><a href="career.html">Career</a></li>
               <li><a href="blog.html">blog</a></li>
             </ul>
@@ -189,247 +165,44 @@
           <div class="offcanvas__menu-wrapper">
             <nav class="offcanvas__menu">
               <ul class="menu-anim">
+                <li><a href="cgbsolution.com">home</a></li>
                 <li>
-                  <a>home</a>
-                  <ul>
-                    <li><a href="index-2.html">Digital Maketing</a></li>
-                    <li><a href="index-dark.html">Digital Maketing dark</a></li>
-                    <li><a href="index-3.html">Design Studio </a></li>
-                    <li><a href="index-2-dark.html">Design Studio dark</a></li>
-                    <li><a href="index-4.html">Digital Agency</a></li>
-                    <li><a href="index-3-dark.html">Digital Agency dark</a></li>
-                    <li><a href="index-7.html">creative Agency</a></li>
-                    <li>
-                      <a href="index-7-dark.html">creative Agency dark</a>
-                    </li>
-                    <li><a href="index-6.html">Startup Agency</a></li>
-                    <li><a href="index-6-dark.html">Startup Agency dark</a></li>
-                    <li><a href="index-8.html">modern agency</a></li>
-                    <li><a href="index-8-dark.html">modern agency dark</a></li>
-                    <li><a href="index-5.html">personal Portfolio</a></li>
-                    <li>
-                      <a href="index-4-dark.html">personal Portfolio dark</a>
-                    </li>
-                    <li><a href="index-9.html">portfolio showcase</a></li>
-                    <li>
-                      <a href="index-5-dark.html">portfolio showcase dark</a>
-                    </li>
-                    <li><a href="index-10.html">showcase carousel</a></li>
-                    <li>
-                      <a href="index-10-dark.html">showcase carousel dark</a>
-                    </li>
-                    <li><a href="index-12.html">Interactive link </a></li>
-                    <li>
-                      <a href="index-12-dark.html">Interactive link dark</a>
-                    </li>
-                    <li><a href="index-13.html">portfolio masonry</a></li>
-                    <li>
-                      <a href="index-13-dark.html">portfolio masonry dark</a>
-                    </li>
-                    <li><a href="index-14.html">vertical grid</a></li>
-                    <li><a href="index-14-dark.html">vertical grid dark</a></li>
-                    <li>
-                      <a href="index-15.html">Interactive image slider</a>
-                    </li>
-                    <li>
-                      <a href="index-15-dark.html"
-                        >Interactive image slider dark</a
-                      >
-                    </li>
-                    <li><a href="index-16.html">showcase parallax</a></li>
-                    <li>
-                      <a href="index-16-dark.html">showcase parallax dark</a>
-                    </li>
-                    <li><a href="index-17.html">logo showcase</a></li>
-                    <li><a href="index-17-dark.html">logo showcase dark</a></li>
-                    <li><a href="index-11.html">showcase slider</a></li>
-                    <li>
-                      <a href="index-18.html">Interactive hover showcase</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>woocomerce</a>
-                  <ul>
-                    <li><a href="index-woocommerce.html">Home</a></li>
-                    <li>
-                      <a>shop</a>
-                      <ul>
-                        <li>
-                          <a href="shop-full-width.html">shop - full width</a>
-                        </li>
-                        <li><a href="shop-sidebar.html">shop - sidebar</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="shop-single.html">product details</a></li>
-                    <li><a href="shop-cart.html">cart</a></li>
-                    <li><a href="shop-checkout.html">checkout</a></li>
-                    <li><a href="sign-up.html">sign up</a></li>
-                    <li><a href="sign-in.html">sign in</a></li>
-                    <li><a href="password-reset.html">reset password</a></li>
-                    <li>
-                      <a href="woocomerce-category.html">product category</a>
-                    </li>
-                    <li><a href="account.html">Profile</a></li>
-                  </ul>
+                  <a>About us</a>
                 </li>
                 <li>
                   <a>Service</a>
                   <ul>
-                    <li><a href="service.html">service</a></li>
-                    <li><a href="service-dark.html">service dark</a></li>
-                    <li><a href="service-2.html">service V.2</a></li>
-                    <li><a href="service-2-dark.html">service V.2 dark</a></li>
-                    <li><a href="service-3.html">service V.3</a></li>
-                    <li><a href="service-3-dark.html">service V.3 dark</a></li>
-                    <li><a href="service-4.html">service V.4</a></li>
-                    <li><a href="service-4-dark.html">service V.4 dark</a></li>
-                    <li><a href="service-5.html">service V.5</a></li>
-                    <li><a href="service-5-dark.html">service V.5 dark</a></li>
-                    <li><a href="service-6.html">service V.6</a></li>
-                    <li><a href="service-6-dark.html">service V.6 dark</a></li>
-                    <li><a href="service-details.html">service details</a></li>
                     <li>
-                      <a href="service-details-dark.html"
-                        >service details dark</a
+                      <a href="website-designing.html"
+                        >Website Designing Services</a
                       >
                     </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>pages</a>
-                  <ul>
                     <li>
-                      <a>Service</a>
-                      <ul>
-                        <li><a href="service.html">service</a></li>
-                        <li><a href="service-dark.html">service dark</a></li>
-                        <li><a href="service-2.html">service V.2</a></li>
-                        <li>
-                          <a href="service-2-dark.html">service V.2 dark</a>
-                        </li>
-                        <li><a href="service-3.html">service V.3</a></li>
-                        <li>
-                          <a href="service-3-dark.html">service V.3 dark</a>
-                        </li>
-                        <li><a href="service-4.html">service V.4</a></li>
-                        <li>
-                          <a href="service-4-dark.html">service V.4 dark</a>
-                        </li>
-                        <li><a href="service-5.html">service V.5</a></li>
-                        <li>
-                          <a href="service-5-dark.html">service V.5 dark</a>
-                        </li>
-                        <li><a href="service-6.html">service V.6</a></li>
-                        <li>
-                          <a href="service-6-dark.html">service V.6 dark</a>
-                        </li>
-                        <li>
-                          <a href="service-details.html">service details</a>
-                        </li>
-                        <li>
-                          <a href="service-details-dark.html"
-                            >service details dark</a
-                          >
-                        </li>
-                      </ul>
+                      <a href="application-development.html"
+                        >Mobile Application Development</a
+                      >
                     </li>
                     <li>
-                      <a>portfolio</a>
-                      <ul>
-                        <li><a href="portfolio.html">portfolio</a></li>
-                        <li>
-                          <a href="portfolio-dark.html">portfolio dark</a>
-                        </li>
-                        <li><a href="portfolio-2.html">portfolio v.2</a></li>
-                        <li>
-                          <a href="portfolio-2-dark.html">portfolio v.2 dark</a>
-                        </li>
-                        <li><a href="portfolio-3.html">portfolio v.3</a></li>
-                        <li>
-                          <a href="portfolio-3-dark.html">portfolio v.3 dark</a>
-                        </li>
-                        <li><a href="portfolio-4.html">portfolio v.4</a></li>
-                        <li>
-                          <a href="portfolio-4-dark.html">portfolio v.4 dark</a>
-                        </li>
-                        <li><a href="portfolio-5.html">portfolio v.5</a></li>
-                        <li>
-                          <a href="portfolio-5-dark.html">portfolio v.5 dark</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-details.html">portfolio details</a>
-                        </li>
-                        <li>
-                          <a href="portfolio-details-dark.html"
-                            >portfolio details dark</a
-                          >
-                        </li>
-                      </ul>
+                      <a href="digital-marketing.html">Digital Marketing</a>
                     </li>
                     <li>
-                      <a>team</a>
-                      <ul>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="team-dark.html">Team dark</a></li>
-                        <li><a href="team-details.html">Team Details</a></li>
-                        <li>
-                          <a href="team-details-dark.html">Team Details dark</a>
-                        </li>
-                        <li><a href="career.html">career</a></li>
-                        <li><a href="career-dark.html">career dark</a></li>
-                        <li><a href="job-details.html">job details</a></li>
-                        <li>
-                          <a href="job-details-dark.html">job details dark</a>
-                        </li>
-                      </ul>
+                      <a href="social-media-marketing.html"
+                        >Social Media Maketing</a
+                      >
+                    </li>
+                    <li><a href="graphic-design.html">Graphic Designing</a></li>
+                    <li><a href="service-6-dark.html">SEO</a></li>
+                    <li>
+                      <a href="service-details-dark.html">Email Marketing</a>
                     </li>
                     <li>
-                      <a>blog</a>
-                      <ul>
-                        <li><a href="blog.html">blog</a></li>
-                        <li><a href="blog-dark.html">blog dark</a></li>
-                        <li><a href="blog-2.html">blog v.2</a></li>
-                        <li><a href="blog-2-dark.html">blog v.2 dark</a></li>
-                        <li><a href="category.html">category</a></li>
-                        <li><a href="category-dark.html">category dark</a></li>
-                        <li><a href="blog-details.html">blog details</a></li>
-                        <li>
-                          <a href="blog-details-dark.html">blog details dark</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a>Others</a>
-                      <ul>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="about-dark.html">about dark</a></li>
-                        <li><a href="faq.html">FAQs</a></li>
-                        <li><a href="faq-dark.html">FAQs dark</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                        <li><a href="contact-dark.html">contact dark</a></li>
-                        <li><a href="404.html">404</a></li>
-                        <li><a href="404-dark.html">404 dark</a></li>
-                      </ul>
+                      <a href="service-details-dark.html">Content Writeing</a>
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <a>blog</a>
-                  <ul>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="blog-dark.html">blog dark</a></li>
-                    <li><a href="blog-2.html">blog v.2</a></li>
-                    <li><a href="blog-2-dark.html">blog v.2 dark</a></li>
-                    <li><a href="category.html">category</a></li>
-                    <li><a href="category-dark.html">category dark</a></li>
-                    <li><a href="blog-details.html">blog details</a></li>
-                    <li>
-                      <a href="blog-details-dark.html">blog details dark</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">contact</a></li>
+
+                <li><a>blog</a></li>
+                <li><a href="https://www.cgbsolution.com/contact">contact</a></li>
               </ul>
             </nav>
           </div>
@@ -444,11 +217,13 @@
           <div class="offcanvas__contact">
             <h3>Get in touch</h3>
             <ul>
-              <li><a href="tel:02094980547">+(02) - 094 980 547</a></li>
+              <li><a href="tel:9888912909">+91 9888912909</a></li>
               <li>
-                <a href="mailto:info@extradesign.com">info@extradesign.com</a>
+                <a href="mailto:anurag.gupta@cgbsolution.com"
+                  >anurag.gupta@cgbsolution.com</a
+                >
               </li>
-              <li>230 Norman Street New York, QC (USA) H8R 1A1</li>
+              <li>FF-7 TDI Center, Jasola, New Delhi-110025</li>
             </ul>
           </div>
           <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1" />
@@ -585,175 +360,139 @@
             </div>
           </section>
           <!-- Story area end -->
-
-          <!-- Counter area start -->
-          <section class="counter__area">
-            <div class="container g-0 line pb-140 pt-140">
-              <span class="line-3"></span>
-
-              <div class="row">
-                <div class="col-xxl-12">
-                  <div class="counter__wrapper-2 counter_animation">
-                    <div class="counter__item-2 counter__anim">
-                      <h2 class="counter__number">25k</h2>
-                      <p>Project <br />completed</p>
-                      <span class="counter__border"></span>
-                    </div>
-                    <div class="counter__item-2 counter__anim">
-                      <h2 class="counter__number">8k</h2>
-                      <p>Happy <br />customers</p>
-                      <span class="counter__border"></span>
-                    </div>
-                    <div class="counter__item-2 counter__anim">
-                      <h2 class="counter__number">15</h2>
-                      <p>Years <br />experiences</p>
-                      <span class="counter__border"></span>
-                    </div>
-                    <div class="counter__item-2 counter__anim">
-                      <h2 class="counter__number">98</h2>
-                      <p>Awards <br />achievement</p>
-                      <span class="counter__border"></span>
+        <!-- Workflow area start -->
+        <section class="workflow__area-3">
+          <div class="workflow__wrapper-3">
+            <div class="choose-wrapper wf_panel">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xxl-12">
+                    <div class="choose-title-wrapper">
+                      <h2 class="choose-title title-anim">why <br> choose us</h2>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- Counter area end -->
 
-          <!-- Team area start -->
-          <section class="team__area pt-140 pb-140">
-            <div class="sec-title-wrapper">
-              <h2 class="sec-sub-title title-anim">Our Team</h2>
-              <h3 class="sec-title title-anim">How we work</h3>
-            </div>
-
-            <div class="swiper team__slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide team__slide">
-                  <a href="team-details.html">
-                    <img src="assets/imgs/team/1.jpg" alt="Team Member" />
-                    <div class="team__info">
-                      <h4 class="team__member-name">Saymon D. Halk</h4>
-                      <h5 class="team__member-role">Founder & CEO</h5>
+            <div class="research__area wf_panel pt-150">
+              <div class="container inner_content">
+                <div class="row">
+                  <div class="col-xxl-6 col-xl-6 col-lg-6">
+                    <div class="sec-title-wrapper">
+                      <h2 class="sec-sub-title">why <br>choose us</h2>
+                      <h3 class="sec-title">Keword,Research Strategy, Survey, & Analytics</h3>
+                      <p>Attention, we take out our round glasses and our sweater with elbow patches to go back to the
+                        origins of the user experience: the first mention of the user and its importance was born in the
+                      </p>
                     </div>
-                  </a>
-                </div>
+                    <ul class="research__tools">
+                      <li><a href="#">Google</a></li>
+                      <li><a href="#">pinterest</a></li>
+                      <li><a href="#">Instagram</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xxl-6 col-xl-6 col-lg-6">
+                    <div class="research__list">
+                      <div class="research__item">
+                        <div class="research__number">
+                          <span>60%</span>
+                        </div>
+                        <div class="research__info">
+                          <h4 class="research__title">Strategy</h4>
+                          <p>Your marketing strategy optimizing performances doesn’t have to be a guessing game.</p>
+                        </div>
+                      </div>
 
-                <div class="swiper-slide team__slide">
-                  <a href="team-details.html">
-                    <img src="assets/imgs/team/2.jpg" alt="Team Member" />
-                    <div class="team__info">
-                      <h4 class="team__member-name">Jassica Oliver</h4>
-                      <h5 class="team__member-role">Researcher</h5>
+                      <div class="research__item">
+                        <div class="research__number">
+                          <span>95%</span>
+                        </div>
+                        <div class="research__info">
+                          <h4 class="research__title">Audience</h4>
+                          <p>Your marketing strategy optimizing performances doesn’t have to be a guessing game.</p>
+                        </div>
+                      </div>
+
+                      <div class="research__item">
+                        <div class="research__number">
+                          <span>70%</span>
+                        </div>
+                        <div class="research__info">
+                          <h4 class="research__title">Keyword</h4>
+                          <p>Your marketing strategy optimizing performances doesn’t have to be a guessing game.</p>
+                        </div>
+                      </div>
                     </div>
-                  </a>
-                </div>
-
-                <div class="swiper-slide team__slide">
-                  <a href="team-details.html">
-                    <img src="assets/imgs/team/3.jpg" alt="Team Member" />
-                    <div class="team__info">
-                      <h4 class="team__member-name">Daniyel Adamson</h4>
-                      <h5 class="team__member-role">Digital Marketer</h5>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="swiper-slide team__slide">
-                  <a href="team-details.html">
-                    <img src="assets/imgs/team/4.jpg" alt="Team Member" />
-                    <div class="team__info">
-                      <h4 class="team__member-name">Hardiya Kethrine</h4>
-                      <h5 class="team__member-role">Lead Designer</h5>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="swiper-slide team__slide">
-                  <a href="team-details.html">
-                    <img src="assets/imgs/team/2.jpg" alt="Team Member" />
-                    <div class="team__info">
-                      <h4 class="team__member-name">Saymon D. Halk</h4>
-                      <h5 class="team__member-role">Researcher</h5>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="swiper-slide team__slide">
-                  <a href="team-details.html">
-                    <img src="assets/imgs/team/3.jpg" alt="Team Member" />
-                    <div class="team__info">
-                      <h4 class="team__member-name">Jassica Oliver</h4>
-                      <h5 class="team__member-role">Lead Designer</h5>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Team area end -->
-
-          <!-- Brand area start -->
-          <section class="brand__area">
-            <div class="container g-0 line pt-140 pb-140">
-              <span class="line-3"></span>
-              <div class="row g-0">
-                <div class="col-xxl-12">
-                  <div class="sec-title-wrapper">
-                    <h2 class="sec-sub-title title-anim">Internation Brands</h2>
-                    <h3 class="sec-title title-anim">
-                      We are happy to work with global <br />
-                      largest brands
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="brand__list">
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/1.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/2.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/3.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/4.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/5.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/6.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/3.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/4.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/5.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/6.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/1.png" alt="Brand Logo" />
-                  </div>
-                  <div class="brand__item fade_bottom">
-                    <img src="assets/imgs/brand/2.png" alt="Brand Logo" />
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- Brand area end -->
+
+            <div class="counter__area-3 wf_panel">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xxl-12">
+                    <div class="sec-title-wrapper">
+                      <h2 class="sec-sub-title">Why <br>Choose Us</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                    <div class="counter__wrapper-3">
+                      <div class="counter__item-3">
+                        <h2 class="counter__number">25k</h2>
+                        <p>Project <br>completed</p>
+                      </div>
+                      <div class="counter__item-3">
+                        <h2 class="counter__number">8k</h2>
+                        <p>Happy <br>customers</p>
+                      </div>
+                      <div class="counter__item-3">
+                        <h2 class="counter__number">15</h2>
+                        <p>Years <br>experiences</p>
+                      </div>
+                      <div class="counter__item-3">
+                        <h2 class="counter__number">98</h2>
+                        <p>Awards <br>achievement</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                    <div class="counter__img-3">
+                      <img src="assets/imgs/thumb/counter-3.png" alt="Counter Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA area start -->
+            <div class="cta__area-3 wf_panel">
+              <div class="container pt-150 pb-150">
+                <div class="row">
+                  <div class="col-xxl-12">
+                    <div class="cta__content-3">
+                      <p class="cta__sub-title-2">Have you project in mind?</p>
+                      <h2 class="cta__title-2">Let’s make something great together!</h2>
+                      <div class="btn_wrapper">
+                        <a href="contact.html" class="wc-btn-black btn-hover btn-item"><span></span>Contact <br>with
+                          us <i class="fa-solid fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CTA area end -->
+
+          </div>
+        </section>
+        <!-- Workflow area end -->
 
           <!-- Testimonial area start -->
-          <section class="testimonial__area-2">
+          <!-- <section class="testimonial__area-2">
             <div class="container g-0 line pb-140">
               <span class="line-3"></span>
 
@@ -841,7 +580,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
           <!-- Testimonial area end -->
 
           <!-- CTA area start -->
@@ -857,7 +596,7 @@
                     </h2>
                     <div class="btn_wrapper">
                       <a
-                        href="contact.html"
+                        href="https://www.cgbsolution.com/contact"
                         class="wc-btn-primary btn-hover btn-item"
                         ><span></span>Let’s talk us
                         <i class="fa-solid fa-arrow-right"></i
@@ -876,9 +615,9 @@
           <div class="footer__top">
             <div class="container footer-line"></div>
             <img
-              src="assets/imgs/thumb/footer.jpg"
+              src="assets/imgs/thumb/footer1.png"
               alt="Footer Image"
-              data-speed="0.5"
+              data-speed="0.75"
             />
           </div>
 
@@ -889,8 +628,8 @@
                   <div class="footer__inner">
                     <div class="footer__widget">
                       <img
-                        class="footer__logo"
-                        src="assets/imgs/logo/footer-logo-white.png"
+                        class="footer__logo mw-100"
+                        src="assets/imgs/logo/cgb-studios.png"
                         alt="Footer Logo"
                       />
                       <p>
@@ -899,22 +638,23 @@
                       </p>
                       <ul class="footer__social">
                         <li>
-                          <a href="#"
+                          <a
+                            href="https://facebook.com/profile.php?id=61552225540134"
                             ><span><i class="fa-brands fa-facebook-f"></i></span
                           ></a>
                         </li>
                         <li>
-                          <a href="#"
+                          <a href="https://twitter.com/cgb_solutions"
                             ><span><i class="fa-brands fa-twitter"></i></span
                           ></a>
                         </li>
                         <li>
-                          <a href="#"
+                          <a href="https://www.instagram.com/cgbsolutions_/"
                             ><span><i class="fa-brands fa-instagram"></i></span
                           ></a>
                         </li>
                         <li>
-                          <a href="#"
+                          <a href="https://www.linkedin.com/company/cgbindia/"
                             ><span><i class="fa-brands fa-linkedin"></i></span
                           ></a>
                         </li>
@@ -928,22 +668,26 @@
                         <li><a href="portfolio.html">Case Study</a></li>
                         <li><a href="career.html">Career</a></li>
                         <li><a href="blog.html">blog</a></li>
-                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="https://www.cgbsolution.com/contact">contact</a></li>
                       </ul>
                     </div>
 
                     <div class="footer__widget-3">
                       <h2 class="footer__widget-title">Contact Us</h2>
                       <ul class="footer__contact">
-                        <li>Valentin, Street Road 24, New York, USA - 67452</li>
                         <li>
-                          <a href="tel:02574328301" class="phone"
-                            >+02) 574 - 328 - 301
+                          Second Floor, No. 112, AKR Tech Park, 7th Mile Hosur
+                          Rd, Krishna Reddy Industrial Area, Bengaluru,
+                          Bengaluru Urban, Karnataka, 560068
+                        </li>
+                        <li>
+                          <a href="tel:919888912909" class="phone"
+                            >+91 9888912909
                           </a>
                         </li>
                         <li>
-                          <a href="mailto:info@buildyexample.com"
-                            >info@buildyexample.com</a
+                          <a href="mailto:info@cgbindia.com"
+                            >info@cgbindia.com</a
                           >
                         </li>
                       </ul>
@@ -955,21 +699,21 @@
                       </h2>
                       <div class="btn_wrapper">
                         <a
-                          href="contact.html"
+                          href="https://www.cgbsolution.com/contact"
                           class="wc-btn-primary btn-hover btn-item"
                           ><span></span> contact us
                           <i class="fa-solid fa-arrow-right"></i
                         ></a>
                       </div>
-                      <h3 class="contact-time">09 : 00 AM - 10 : 30 PM</h3>
-                      <h4 class="contact-day">Saturday - Thursday</h4>
+                      <h3 class="contact-time">09 : 00 AM - 07 : 00 PM</h3>
+                      <h4 class="contact-day">Monday - Friday</h4>
                     </div>
 
                     <div class="footer__copyright">
                       <p>
-                        © 2022 - 2025 | Alrights reserved by
-                        <a href="https://dev.wealcoder.com/" target="_blank"
-                          >Wealcoder</a
+                        © 2013 - 2024 | Alrights reserved by
+                        <a href="https://cgbsolution.com/" target="_blank"
+                          >CGB Solutions</a
                         >
                       </p>
                     </div>
@@ -996,6 +740,48 @@
       </div>
     </div>
 
+    <!-- Modal 1 -->
+    <div class="modal__testimonial" id="modal_testimonial">
+      <div class="modal__testimonial-content">
+        <span class="modal__close" id="modal_close"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <iframe
+          src="https://www.youtube.com/embed/vZgyWfmw_Kw"
+          title="Testimonial Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal__testimonial" id="modal_testimonial2">
+      <div class="modal__testimonial-content">
+        <span class="modal__close" id="modal_close2"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <iframe
+          src="https://www.youtube.com/embed/JulIeG1V8T4"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal__testimonial" id="modal_testimonial3">
+      <div class="modal__testimonial-content">
+        <span class="modal__close" id="modal_close3"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+        <iframe
+          src="https://www.youtube.com/embed/7QkL-40FRfE"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
     <!-- All JS files -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1012,6 +798,4 @@
     <script src="assets/js/jquery.meanmenu.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
-
-  <!-- Mirrored from wealcoder.com/dev/html/axtra/about-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Dec 2023 07:21:48 GMT -->
 </html>

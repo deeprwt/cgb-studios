@@ -2682,13 +2682,13 @@ img {
   color: var(--white);
 }
 
-/*----------------------------------------*/
+/*----------------------------------------*/  
 /*  09. MENU CSS START
 /*----------------------------------------*/
 .main-menu > li, .main-menu-4 > li {
   display: inline-block;
   /* margin: 0 38px; */
-  margin: 0 24px;
+  margin: 0 15px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu > li, .main-menu-4 > li {
@@ -5078,8 +5078,10 @@ img {
 .header__inner-2, .header__inner-3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px auto 150px;
-  grid-template-columns: 150px auto 150px;
+  /* -ms-grid-columns: 150px auto 150px;
+  grid-template-columns: 150px auto 150px; */
+  -ms-grid-columns: 100px auto 100px;
+  grid-template-columns: 100px auto 100px;
   padding: 0 30px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

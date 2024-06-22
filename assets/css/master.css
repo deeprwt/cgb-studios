@@ -1025,7 +1025,7 @@ img {
   border-color: var(--bg-line);
 }
 .dark .brand__item {
-  background: rgb(255 255 255 / 56%);
+  /* background: rgb(255 255 255 / 56%); */
     backdrop-filter: blur(10px);
   border-color: var(--bg-line);
 }
@@ -7262,7 +7262,7 @@ img {
 /*----------------------------------------*/
 .roll__area {
   background-color: var(--primary);
-  padding: 31px 10px;
+  padding: 24px 10px;
 }
 .roll__area-2 {
   padding: 31px 10px;
@@ -7287,7 +7287,7 @@ img {
 }
 .roll__slide h2 {
   font-weight: 400;
-  font-size: 26px;
+  font-size: 21px;
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--black);

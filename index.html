@@ -529,7 +529,7 @@
                     <span class="counter__border"></span>
                   </div>
                   <div class="counter__item counter__anim">
-                    <h2 class="counter__number">60+</h2>
+                    <h2 class="counter__number">160+</h2>
                     <p>Happy <br>customers</p>
                     <span class="counter__border"></span>
                   </div>
@@ -549,7 +549,57 @@
           </div>
         </section>
         <!-- Counter area end -->
+          
+        <style>
+          /* .workflow__slider::before{
+            position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 58px;
+    background: white;
+          } */
+          .workflow__slider::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px; /* Increased height for better visibility */
+  left: 0;
+  top: 56px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0) 0%,
+    rgba(255, 0, 0, 0.8) 10%,
+    rgba(255, 127, 0, 0.8) 20%,
+    rgba(255, 255, 0, 0.8) 30%,
+    rgba(0, 255, 0, 0.8) 40%,
+    rgba(0, 0, 255, 0.8) 50%,
+    rgba(75, 0, 130, 0.8) 60%,
+    rgba(143, 0, 255, 0.8) 70%,
+    rgba(255, 0, 0, 0.8) 80%,
+    rgba(255, 0, 0, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: movingRainbowLine 5s linear infinite;
+  z-index: 0; /* Ensure it stays behind the content */
+}
 
+@keyframes movingRainbowLine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  /* Your content styles here */
+}
+        </style>
 
         <!-- Workflow area start -->
         <section class="workflow__area">
@@ -569,38 +619,38 @@
                     <div class="swiper-slide workflow__slide fade_left">
                       <h4 class="workflow__step">step 01</h4>
                       <h5 class="workflow__number">01</h5>
-                      <h6 class="workflow__title">Audience</h6>
-                      <p>Having these the marketplace to your business</p>
+                      <h6 class="workflow__title">Info Gathering</h6>
+                      <p>Collecting and analyzing relevant information to understand the project's scope and requirements.</p>
                     </div>
-
+                    
                     <div class="swiper-slide workflow__slide fade_left">
                       <h4 class="workflow__step">step 02</h4>
                       <h5 class="workflow__number">02</h5>
                       <h6 class="workflow__title">Plan & Sketch</h6>
-                      <p>Delicate and long-lasting with vitamins and nutritions</p>
+                      <p>Creating an initial plan and rough sketches to visualize the structure and layout of the project.</p>
                     </div>
-
+                    
                     <div class="swiper-slide workflow__slide fade_left">
                       <h4 class="workflow__step">step 03</h4>
                       <h5 class="workflow__number">03</h5>
-                      <h6 class="workflow__title">Customize</h6>
-                      <p>Creating brand identities for the digital experiences</p>
+                      <h6 class="workflow__title">Customize & Design</h6>
+                      <p>Developing customized designs to align with the project's objectives and client preferences.</p>
                     </div>
-
+                    
                     <div class="swiper-slide workflow__slide fade_left">
                       <h4 class="workflow__step">step 04</h4>
-                      <h5 class="workflow__number">04</h5>
-                      <h6 class="workflow__title">User Testing</h6>
-                      <p>We look forward to engage with beyond the conventional</p>
+                      <h5 class="workflow__number">04</h6>
+                      <h6 class="workflow__title">Development</h6>
+                      <p>Transforming the designs into a functional product through coding and implementation.</p>
                     </div>
-
+                    
                     <div class="swiper-slide workflow__slide fade_left">
                       <h4 class="workflow__step">step 05</h4>
                       <h5 class="workflow__number">05</h5>
-                      <h6 class="workflow__title">User Testing</h6>
-                      <p>We look forward to engage with beyond the conventional</p>
+                      <h6 class="workflow__title">Testing & Launch</h6>
+                      <p>Conducting thorough testing to ensure quality and launching the product to the market.</p>
                     </div>
-
+                    
                     <!-- <div class="swiper-slide workflow__slide fade_left">
                       <h4 class="workflow__step">step 06</h4>
                       <h5 class="workflow__number">06</h5>

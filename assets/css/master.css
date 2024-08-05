@@ -96,7 +96,8 @@
   --d-gray: #6A6A6A;
   --d-black: #1A1A1A;
   --d-black-2: #171717;
-  --d-black-3: #1A1A1A;
+  /* --d-black-3: #1A1A1A; */
+  --d-black-3: #292828;
 }
 
 @font-face {

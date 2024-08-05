@@ -614,6 +614,10 @@
       nextEl: ".next-button",
       prevEl: ".prev-button",
     },
+    autoplay: {
+      delay: 3000, // Time between slides in milliseconds (e.g., 3000ms = 3 seconds)
+      disableOnInteraction: false, // Auto slide will not stop after user interactions (like swiping)
+    },
   });
   /////////////////////////////////////////////////////
 

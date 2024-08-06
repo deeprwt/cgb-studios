@@ -34906,3 +34906,11 @@ ul.mega-menu-2.woocomerce-megamenu {
   border-left: 1px solid var(--secondary);
 }
 /*# sourceMappingURL=master.css.map */
+
+
+/* code by deepak */
+
+.no_before::before{
+  content: ""; /* This will prevent the pseudo-element from showing */
+    display: none; /* Hide the pseudo-element */
+}

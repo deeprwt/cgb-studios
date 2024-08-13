@@ -20567,8 +20567,10 @@ img {
   --white-6: #d7d7d7;
   --white-7: #B7B7C5;
   --black-14: #323438;
-  --lime: #745EFF;
-  --lime-2: #5547F5;
+  /* --lime: #745EFF; */
+  --lime: #AC5FDA;
+  --lime-2: #AC5FDA;
+  /* --lime-2: #5547F5; */
   --gray-16: #6B6B6B;
   --gray-17: #F7F7FC;
   --gray-18: #999999;
@@ -22926,8 +22928,10 @@ footer .btn_wrapper {
   --white-7: #B7B7C5;
   --black-14: #323438;
   --black-15: #2C2C2C;
-  --lime: #745EFF;
-  --lime-2: #5547F5;
+  /* --lime: #745EFF; */
+  --lime: #AC5FDA;
+  --lime-2: #AC5FDA;
+  /* --lime-2: #5547F5; */
   --gray-16: #6B6B6B;
   --gray-17: #F7F7FC;
   --gray-18: #999999;
@@ -22977,7 +22981,8 @@ main {
   padding: 17px 36px 16px;
   color: var(--white);
   border-radius: 5px;
-  background: var(--lime);
+  border: 1px solid var(--secondary);
+  /* background: var(--gray-2); */
   display: inline-block;
 }
 .btn-started i {
@@ -22985,7 +22990,7 @@ main {
 }
 .btn-started:hover {
   color: var(--white);
-  background-color: #FF977B;
+  background-color: var(--lime-2);
 }
 .btn-view {
   font-weight: 500;
@@ -34914,3 +34919,5 @@ ul.mega-menu-2.woocomerce-megamenu {
   content: ""; /* This will prevent the pseudo-element from showing */
     display: none; /* Hide the pseudo-element */
 }
+
+/* code by Rishabh */

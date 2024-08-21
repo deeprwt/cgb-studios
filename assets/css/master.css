@@ -16614,7 +16614,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 150%;
+  /* height: 150%; */
   margin-left: auto;
   margin-right: auto;
 }

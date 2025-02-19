@@ -10892,7 +10892,7 @@ img {
 .testimonial__slider-3 {
   padding-top: 120px;
   padding-bottom: 120px;
-  max-width: 660px;
+  /* max-width: 660px; */
 }
 @media only screen and (max-width: 767px) {
   .testimonial__slider-3 {
@@ -10961,7 +10961,7 @@ img {
     padding: 0 10px;
   }
 }
-.testimonial__slide-3 p::before {
+/* .testimonial__slide-3 p::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -10970,7 +10970,7 @@ img {
   left: calc(50% - 23px);
   background-image: url(../imgs/icon/quote.png);
   background-repeat: no-repeat;
-}
+} */
 @media only screen and (max-width: 767px) {
   .testimonial__slide-3 p::before {
     top: -80px;
@@ -34918,6 +34918,10 @@ ul.mega-menu-2.woocomerce-megamenu {
 .no_before::before{
   content: ""; /* This will prevent the pseudo-element from showing */
     display: none; /* Hide the pseudo-element */
+}
+
+.portfolio__title {
+  color: #fff;
 }
 
 /* code by Rishabh */

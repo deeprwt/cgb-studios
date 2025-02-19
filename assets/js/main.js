@@ -611,7 +611,7 @@
     spaceBetween: 0,
     loop: true,
     freemode: true,
-    slidesPerView: 1,
+    slidesPerView: 2,
     speed: 2000,
 
     navigation: {

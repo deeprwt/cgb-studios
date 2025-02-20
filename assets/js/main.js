@@ -3010,7 +3010,7 @@
       part.className = "part";
       let el = document.createElement("a");
       el.className = "section";
-      el.href = "http://127.0.0.1:5500/service-details.html"
+      el.href = "http://127.0.0.1:5500/contact.html"
 
       let img = document.createElement("img");
       img.src = images[current];
@@ -3111,7 +3111,7 @@
         for (let p in parts) {
           let part = parts[p];
           let next = document.createElement("a");
-          next.href = "http://127.0.0.1:5500/service-details.html"
+          next.href = "http://127.0.0.1:5500/contact.html"
           next.className = "section";
           let img = document.createElement("img");
           img.src = images[current];

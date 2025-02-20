@@ -13680,21 +13680,21 @@ img {
   }
 }
 .portfolio__service-item ul {
-  padding-left: 50px;
+  /* padding-left: 50px; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .portfolio__service-item ul {
-    padding-left: 30px;
+    /* padding-left: 30px; */
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio__service-item ul {
-    padding-left: 10px;
+    /* padding-left: 10px; */
   }
 }
 @media only screen and (max-width: 767px) {
   .portfolio__service-item ul {
-    padding-left: 20px;
+    /* padding-left: 20px; */
   }
 }
 .portfolio__service-item ul li {

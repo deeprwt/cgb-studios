@@ -34915,6 +34915,9 @@ ul.mega-menu-2.woocomerce-megamenu {
 .dark.dir-rtl .portfolio__about .brand-title-wrap {
   border-left: 1px solid var(--secondary);
 }
+.service__number{
+  display: none;
+}
 /*# sourceMappingURL=master.css.map */
 
 

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
-  Theme Name: Axtra - Digital Agency HTML5 Template
+  Theme Name: CGB Studios- Digital Agency HTML5 Template
   Author: Crowdyflow
   Support: habib.crowdyflow@gmail.com
   Description: BUILDY – is a  Constructor HTML5 template that comes with high-quality 3 Pre build Home Pages and many built-in awesome inner pages  which are perfect for any creative agencies, designers, digital agencies, freelancers, developers, designers, marketing, startup, blog and portfolio.
@@ -1810,7 +1810,7 @@ img {
   border-color: var(--bg-line);
 }
 .dark .contact__form textarea:focus,
-.dark .contact__form input:focus {
+.dark .contact__form input{
   border-color: var(--white);
 }
 .dark .contact__info h3,
@@ -5255,7 +5255,7 @@ img {
   height: 180px;
   right: -60px;
   top: -60px;
-  border: 1px solid var(--gray);
+  /* border: 1px solid var(--gray); */
   border-radius: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -8726,8 +8726,10 @@ img {
 .service__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.7fr 2fr 2.5fr 1fr;
-  grid-template-columns: 0.7fr 2fr 2.5fr 1fr;
+  -ms-grid-columns: 2.7fr 2.5fr 1fr;
+  grid-template-columns: 2.7fr 2.5fr 1fr;
+  /* -ms-grid-columns: 0.7fr 2fr 2.5fr 1fr;
+  grid-template-columns: 0.7fr 2fr 2.5fr 1fr; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8747,6 +8749,9 @@ img {
     grid-template-columns: 1fr;
     padding: 25px 0 10px;
   }
+}
+.dark .header__area-7 {
+  background: var(--black-2);
 }
 .service__item:hover .service__number span,
 .service__item:hover .service a {
@@ -20234,7 +20239,7 @@ img {
 }
 .contact__form input:focus,
 .contact__form textarea:focus {
-  border-bottom: 1px solid var(--black-2);
+  border-bottom: 1px solid var(--white);
 }
 .contact__form input::-webkit-input-placeholder, .contact__form textarea::-webkit-input-placeholder {
   color: var(--black-2);
@@ -21692,8 +21697,8 @@ img {
   }
 }
 .footer__widget {
-  -ms-grid-column-span: 4;
-  grid-column: span 4;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
   padding: 140px 0 130px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -21785,8 +21790,8 @@ img {
   }
 }
 .footer__widget-4 {
-  -ms-grid-column-span: 4;
-  grid-column: span 4;
+  -ms-grid-column-span: 6;
+  grid-column: span 6;
   -ms-grid-row-span: 2;
   grid-row: span 2;
   background-color: var(--black-4);

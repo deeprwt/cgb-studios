@@ -826,10 +826,12 @@ img {
 }
 .dark .wc-btn-black:hover {
   border-color: var(--white);
-  color: var(--black-2);
+  color: var(--white);
+  /* color: var(--black-2); */
 }
 .dark .wc-btn-black:hover span {
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  background-color: var(--primary);
 }
 .dark .line::before,
 .dark .line::after,
@@ -8977,6 +8979,7 @@ img {
   }
 }
 .service__hover-3 {
+  border-radius: 15px;
   width: 300px;
   height: 400px;
   position: absolute;
@@ -34935,6 +34938,10 @@ ul.mega-menu-2.woocomerce-megamenu {
 
 .portfolio__title {
   color: #fff;
+}
+
+.dark .service__item-3:hover h3 a{
+  color: #ac5fda;
 }
 
 /* code by Rishabh */

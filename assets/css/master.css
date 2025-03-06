@@ -22871,7 +22871,8 @@ footer .btn_wrapper {
   width: 100%;
   height: 100vh;
   background-color: var(--black-2);
-  position: absolute;
+  /* position: absolute; */
+      position: fixed;
   left: 0;
   top: 0;
   z-index: 99999;
@@ -34917,6 +34918,10 @@ ul.mega-menu-2.woocomerce-megamenu {
 }
 .service__number{
   display: none;
+}
+
+.loading img{
+  width: 600px;
 }
 /*# sourceMappingURL=master.css.map */
 

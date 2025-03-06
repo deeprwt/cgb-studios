@@ -344,7 +344,7 @@
 }
 
 .pt-150 {
-  padding-top: 150px;
+  padding-top: 130px;
 }
 @media only screen and (max-width: 767px) {
   .pt-150 {
@@ -10157,6 +10157,7 @@ img {
   padding-top: 60px;
   direction: ltr;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .workflow__area-3 {
     padding-top: 90px;
@@ -10341,14 +10342,14 @@ img {
 
 .choose-title {
   font-weight: 500;
-  font-size: 200px;
-  line-height: 1;
+  font-size: 140px;
+  line-height: 1.3;
   text-transform: uppercase;
   color: var(--black);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .choose-title {
-    font-size: 160px;
+    font-size: 130px;
     margin-top: -100px;
   }
 }
@@ -10614,7 +10615,7 @@ img {
   }
 }
 .research__item p {
-  max-width: 255px;
+  max-width: 300px;
   color: var(--black-2);
 }
 .research__number span {
@@ -34944,4 +34945,49 @@ ul.mega-menu-2.woocomerce-megamenu {
   color: #ac5fda;
 }
 
-/* code by Rishabh */
+/* code by white */
+
+.white .workflow__area-3 {
+  background-color: #fff1f4!important;
+}
+
+.white .workflow__area-3 .choose-title {
+  color: var(--black)!important;
+}
+
+.white .workflow__area-3 .research__area {
+  background-color: var(--pink-3)!important;
+}
+
+.white .workflow__area-3 .sec-title, .white .workflow__area-3 .sec-title-2, .white .workflow__area-3 .sec-title-3, .white .workflow__area-3 .sec-sub-title {
+  color: var(--black-2)!important;
+}
+
+.white .workflow__area-3 .research__area .sec-sub-title, .white .workflow__area-3 .research__area .sec-title-wrapper p {
+  color: var(--black-2)!important;
+}
+
+.white .workflow__area-3 .research__item p, .white .workflow__area-3 .research__number span, .white .workflow__area-3 .research__title {
+  color: var(--black-2)!important;
+}
+
+.white .counter__area-3 .counter__number {
+  color: var(--black-2)!important;
+}
+
+.white .workflow__area-3 p {
+  color: var(--black-3)!important;
+}
+
+.white .workflow__area-3 .cta__title-2 {
+  color: var(--black-2)!important;
+}
+
+.white .workflow__area-3 .wc-btn-primary, .white .workflow__area-3 .wc-btn-black, .white .workflow__area-3 .wc-btn-light, .white .workflow__area-3 .wc-btn-pink, .white .workflow__area-3 .wc-btn-secondary {
+  color: var(--black-3);
+  border-color: var(--black-2)!important;
+}
+
+.white .workflow__area-3 .cta__area-3 {
+  background-color: #fffaf0!important;
+}

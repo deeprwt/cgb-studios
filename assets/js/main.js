@@ -77,8 +77,11 @@
 
   /////////////////////////////////////////////////////
   // 00. Preloader
-  $(document).ready(function () {
-    $('.preloader').hide();
+  // $(document).ready(function () {
+  //   $('.preloader').hide();
+  // });
+  $(window).on("load", function () {
+    $(".preloader").fadeOut("slow"); // Smoothly hide the preloader after the full page load
   });
   /////////////////////////////////////////////////////
 

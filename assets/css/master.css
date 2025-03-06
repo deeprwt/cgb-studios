@@ -21635,7 +21635,7 @@ img {
   background-color: var(--black-2);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
+  /* -ms-grid-columns: (1fr)[12]; */
   grid-template-columns: repeat(12, 1fr);
   padding-left: 350px;
   position: relative;
@@ -21701,8 +21701,8 @@ img {
   }
 }
 .footer__widget {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
   padding: 140px 0 130px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -21794,8 +21794,8 @@ img {
   }
 }
 .footer__widget-4 {
-  -ms-grid-column-span: 6;
-  grid-column: span 6;
+  -ms-grid-column-span: 5;
+  grid-column: span 5;
   -ms-grid-row-span: 2;
   grid-row: span 2;
   background-color: var(--black-4);
@@ -27192,7 +27192,7 @@ body {
 
 .body-bg {
   position: fixed;
-  z-index: 99999;
+  /* z-index: 99999; */
   pointer-events: none;
   top: 0;
   opacity: 1;
@@ -34943,6 +34943,15 @@ ul.mega-menu-2.woocomerce-megamenu {
 
 .dark .service__item-3:hover h3 a{
   color: #ac5fda;
+}
+
+.tech-logo{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 90px;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
 }
 
 /* code by white */

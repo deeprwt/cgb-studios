@@ -25770,7 +25770,7 @@ main {
 }
 .service__area-7::before {
   position: absolute;
-  content: "";
+  /* content: ""; */
   width: 1px;
   height: 100%;
   left: 36%;
@@ -25804,7 +25804,7 @@ main {
 }
 .service__area-7::after {
   position: absolute;
-  content: "";
+  /* content: ""; */
   width: 1px;
   height: 100%;
   left: 59%;
@@ -25849,9 +25849,11 @@ main {
   }
 }
 .service__item-7 {
-  padding-bottom: 90px;
+  padding:20px 20px 90px 30px;
+  /* padding-bottom: 90px; */
   position: relative;
   z-index: 1;
+  border: 1px solid #d7d7d721;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .service__item-7 {
@@ -25860,12 +25862,13 @@ main {
 }
 @media only screen and (max-width: 767px) {
   .service__item-7 {
-    padding-bottom: 60px;
+    padding:20px 20px 60px 20px;
+    /* padding-bottom: 60px; */
   }
 }
 .service__item-7::after {
   position: absolute;
-  content: "";
+  /* content: ""; */
   width: 100%;
   height: 1px;
   left: 0;
@@ -25905,6 +25908,7 @@ main {
   font-size: 18px;
   line-height: 1.5;
   color: var(--black-2);
+  list-style: circle;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .service__item-7 ul li {
@@ -35000,3 +35004,71 @@ ul.mega-menu-2.woocomerce-megamenu {
 .white .workflow__area-3 .cta__area-3 {
   background-color: #fffaf0!important;
 }
+
+/* breadcrumb */
+
+.wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.breadcrumb {
+  height: 400px;
+}
+
+.breadcrumb p{
+  color: #fff;
+}
+
+.breadcrumb, .btn-wrap .btn, .cta-btn {
+  position: relative;
+}
+
+.breadcrumb video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 10px !important;
+}
+.breadcrumb_content {
+  padding: 6% 0;
+  position: absolute;
+  top: 0;
+  display: flex
+;
+  flex-direction: column;
+  left: 0;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumb {
+      margin-top: 0;
+      position: relative;
+      height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumb video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 85% 100% !important;
+      border-radius: 10px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumb_content {
+      padding: 2% 4% !important;
+      background: linear-gradient(176deg, rgb(0 0 0 / 39%) 3%, rgb(0 0 0 / 89%) 100%) !important;
+      border-radius: 10px !important;
+  }
+}
+
+

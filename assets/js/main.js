@@ -77,12 +77,12 @@
 
   /////////////////////////////////////////////////////
   // 00. Preloader
-  // $(document).ready(function () {
-  //   $('.preloader').hide();
-  // });
-  $(window).on("load", function () {
-    $(".preloader").fadeOut("slow"); // Smoothly hide the preloader after the full page load
+  $(document).ready(function () {
+    $('.preloader').hide();
   });
+  // $(window).on("load", function () {
+  //   $(".preloader").fadeOut("slow"); 
+  // });
   /////////////////////////////////////////////////////
 
   // 07. Data backgrond

@@ -5085,7 +5085,7 @@ img {
   grid-template-columns: 150px auto 150px; */
   -ms-grid-columns: 100px auto 100px;
   grid-template-columns: 100px auto 100px;
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__inner-2, .header__inner-3 {
@@ -7293,7 +7293,7 @@ img {
   font-size: 21px;
   line-height: 1.1;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--white);
 }
 
 .contact_wrap {
@@ -9221,7 +9221,7 @@ img {
   }
 }
 .service__list-3 {
-  padding-top: 70px;
+  /* padding-top: 70px; */
   position: relative;
 }
 @media only screen and (max-width: 767px) {
@@ -35071,4 +35071,10 @@ ul.mega-menu-2.woocomerce-megamenu {
   }
 }
 
+
+@media only screen and (min-width: 992px) {
+  .header__nav-icon-7 {
+    display: none;
+  }
+}
 

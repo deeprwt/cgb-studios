@@ -567,6 +567,34 @@
   });
   /////////////////////////////////////////////////////
 
+    // 11. Workflow Slider
+    var workflow_slider2 = new Swiper(".workflow__slider2", {
+      loop: true,
+      freemode: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      speed: 2000,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+      autoplay: {
+        delay: 3000, // Time between slides in milliseconds (e.g., 3000ms = 3 seconds)
+        disableOnInteraction: false, // Auto slide will not stop after user interactions (like swiping)
+      },
+    });
+    /////////////////////////////////////////////////////
+
 
   /////////////////////////////////////////////////////
   // 12. Team Slider

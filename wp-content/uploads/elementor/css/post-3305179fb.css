@@ -1,0 +1,75 @@
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:center;--padding-top:40px;--padding-bottom:40px;--padding-left:00px;--padding-right:0px;}.elementor-33051 .elementor-element.elementor-element-ebbbdf9:not(.elementor-motion-effects-element-type-background), .elementor-33051 .elementor-element.elementor-element-ebbbdf9 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-4a23396 );}#elementor-popup-modal-33051 .dialog-widget-content{animation-duration:1s;box-shadow:2px 8px 23px 3px rgba(0,0,0,0.2);}#elementor-popup-modal-33051{background-color:rgba(0,0,0,.8);justify-content:flex-end;align-items:center;pointer-events:all;}#elementor-popup-modal-33051 .dialog-message{width:1000px;height:auto;padding:0px 0px 0px 0px;}#elementor-popup-modal-33051 .dialog-close-button{display:flex;top:2%;font-size:24px;}body:not(.rtl) #elementor-popup-modal-33051 .dialog-close-button{right:102%;}body.rtl #elementor-popup-modal-33051 .dialog-close-button{left:102%;}@media(max-width:767px){.elementor-33051 .elementor-element.elementor-element-ebbbdf9{--padding-top:40px;--padding-bottom:20px;--padding-left:20px;--padding-right:20px;}body:not(.rtl) #elementor-popup-modal-33051 .dialog-close-button{right:2%;}body.rtl #elementor-popup-modal-33051 .dialog-close-button{left:2%;}}/* Start custom CSS for container, class: .elementor-element-ebbbdf9 */.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .form-row, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .form-row1, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .recaptcha-credit{
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .option-box{
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .form-check{
+    gap: 16px;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .radio-checkmark, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .checkmark {
+    position: absolute;
+    background-color: #1a1a1a;
+    margin: auto;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #B2B2B259;
+    z-index: 1;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .radio-image, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .select-image{
+    display: none;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .radio-checkmark:after, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .label-text{
+    display: block;
+    white-space: nowrap;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 input:checked ~ .radio-checkmark:after, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .checkbox-input:checked~.checkmark, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .checkbox-input:checked~.radio-checkmark{
+    border: none;
+}
+
+.elementor-33051 .elementor-element.elementor-element-ebbbdf9 .radio-checkmark:after, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .checkmark:after {
+  left: 0px;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 5px;
+  height: 10px;
+  border: solid #34E08E;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 600px){
+    .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .form-row, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .form-row1, .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .recaptcha-credit{
+    margin-bottom: 16px;
+    }
+
+    .elementor-33051 .elementor-element.elementor-element-ebbbdf9 .form-check{
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}/* End custom CSS */

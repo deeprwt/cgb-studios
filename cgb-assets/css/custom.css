@@ -428,3 +428,70 @@ textarea,.form-select {
   height: auto !important;
   min-height: fit-content;
 }
+
+.li-cls li{
+  margin-bottom: 12px;
+}
+
+.li-cls li::marker {
+  color: #532f78;
+  font-size: 25px;
+}
+
+.logo-card {
+  /* border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  padding: 10px;
+  background: #fff; */
+  background: #FFF;
+  border: .5px solid #F5F5F5;
+  box-shadow: 0 4px 30px rgba(230, 240, 248, .25);
+  border-radius: 5px;
+  padding: 40px;
+  height: 97px;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px
+}
+.logo-card img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.button_slide5 {
+  color: black;
+  background: white;
+  /* border: 2px solid #4E2979; */
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "manrope";
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #4E2979;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  justify-content: center !important;
+  border-radius: 10px;
+  right: 37%;
+  /* position: absolute; */
+}
+
+.slide_right5:hover {
+  box-shadow: inset 400px 0 0 0 #5b0b4c;
+  color: white;
+}
+
+.icon-flex {
+  flex-basis: 50px;
+}

@@ -511,6 +511,14 @@ textarea,.form-select {
 }
 
 @media (max-width: 768px){
+  .footer-section-one {
+    background: linear-gradient(270deg, #49295f 21.77%, #542f7a 100%);
+    padding: 30px !important;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 768px){
   .none-sm{
     display: none;
   }

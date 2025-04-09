@@ -40,6 +40,11 @@ async function setPhoneNumberBasedOnLocation() {
 
       document.getElementById("phone-number").textContent = phoneNumber;
       document.getElementById("address").textContent = address;
+      console.log("User country:", data.country_name);
+      console.log("Full Geo Data:", data);
+console.log("Detected Country:", data.country_name);
+console.log("Is India?", isIndia);
+console.log("Phone Number Selected:", phoneNumber);
     } catch (error) {
       console.error("Geolocation fetch error:", error);
       document.getElementById("phone-number").textContent = "+971505682557";

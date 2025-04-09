@@ -140,7 +140,6 @@
                     class="form-control"
                     placeholder="Enter your number"
                     name="phone"
-
                     required
                   />
                 </div>
@@ -205,11 +204,15 @@
       <!-- Connect Section -->
       <div class="col-md-3">
         <h5>CONNECT</h5>
-        <p>Sultan Business Centre, Oud Mehta, Dubai, UAE. PO BOX - 554617</p>
+        <p id="address">
+          Sultan Business Centre, Oud Mehta, Dubai, UAE. PO BOX - 554617
+        </p>
         <p>
           Email: <a href="mailto:info@cgb-studios.com">info@cgb-studios.com</a>
         </p>
-        <p>Phone: <a href="tel:+971505682557">+971505682557</a></p>
+        <p>
+          Phone: <a href="tel:+971505682557" id="phone-number">+971505682557</a>
+        </p>
       </div>
 
       <!-- Services Section -->
@@ -268,14 +271,18 @@
         </div>
         <!-- Social Media Icons -->
         <div class="social-icons mt-3">
-          <a href="https://www.facebook.com/profile.php?id=61561349992050"
+          <a
+            href="https://www.facebook.com/profile.php?id=61561349992050"
+            target="_blank"
             ><i class="fab fa-facebook"></i
           ></a>
-          <a href="https://x.com/CgbStudio"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/company/cgbstudios"
+          <!-- <a href="https://x.com/CgbStudio" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a> -->
+          <a href="https://www.linkedin.com/company/cgbstudios" target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://www.instagram.com/cgbstudiosofficial"
+          <a href="https://www.instagram.com/cgbstudiosofficial" target="_blank"
             ><i class="fab fa-instagram"></i
           ></a>
         </div>
@@ -284,8 +291,8 @@
 
     <!-- Footer Bottom -->
     <div class="footer-bottom mt-4">
-      <p>© 2025 CGB Studios. All Rights Reserved.</p>
-      <p>
+      <p style="font-size: 14px">© 2025 CGB Studios. All Rights Reserved.</p>
+      <p class="mb-0">
         <a href="/privacy-policy/">Privacy Policy</a>
         <!-- <a href="#">Terms Of Use</a> -->
       </p>

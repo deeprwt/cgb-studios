@@ -926,7 +926,7 @@ input#form-field-email {
 /* Table of contents end */
 
 .ue_menu-social-icons {
-  justify-content: space-between !important;
+  justify-content: space-around !important;
   border: 2px solid #333;
   border-left: 0;
   border-right: 0;

@@ -27,21 +27,21 @@ let observer = new IntersectionObserver(animateCounter, options);
 document.querySelectorAll('.counter-box').forEach(counter => observer.observe(counter));
 
 
-  async function setPhoneNumberBasedOnLocation() {
+async function setPhoneNumberBasedOnLocation() {
     try {
       const response = await fetch("https://ipapi.co/json/");
       const data = await response.json();
+      console.log("User Country:", data.country_name); // For debugging
       const isIndia = data.country_name === "India";
       const phoneNumber = isIndia ? "+9888912909" : "+971505682557";
       const address = isIndia
-        ? "GF-28 TDI Center, Jasola, New Delhi-110025, India"
+        ? "2nd Floor, No.112, AKR Tech Park, 7th Mile Hosur Rd, Bengaluru, Karnataka-560068"
         : "Sultan Business Centre, Oud Mehta, Dubai, UAE. PO BOX - 554617";
 
       document.getElementById("phone-number").textContent = phoneNumber;
       document.getElementById("address").textContent = address;
     } catch (error) {
       console.error("Geolocation fetch error:", error);
-      // Fallback: Show international number if location not available
       document.getElementById("phone-number").textContent = "+971505682557";
       document.getElementById("address").textContent =
         "Sultan Business Centre, Oud Mehta, Dubai, UAE. PO BOX - 554617";

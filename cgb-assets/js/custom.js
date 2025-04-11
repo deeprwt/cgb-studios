@@ -37,26 +37,28 @@ async function setPhoneNumberBasedOnLocation() {
         ? "2nd Floor, No.112, AKR Tech Park, 7th Mile Hosur Rd, Bengaluru, Karnataka-560068"
         : "Sultan Business Centre, Oud Mehta, Dubai, UAE. PO BOX - 554617";
   
-      // Update visible text and link (main phone link)
+      const telHref = `tel:${phoneNumber.replace(/\s+/g, "")}`;
+  
+      // Update main phone link
       const phoneLink = document.getElementById("phone-link");
       if (phoneLink) {
         phoneLink.textContent = phoneNumber;
-        phoneLink.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
+        phoneLink.href = telHref;
       }
   
       // Update address
-      const addressElement = document.getElementById("address");
-      if (addressElement) {
-        addressElement.textContent = address;
+      const addressEl = document.getElementById("address");
+      if (addressEl) {
+        addressEl.textContent = address;
       }
   
-      // Update button-like <a> tag
+      // Optional phone-button element
       const phoneBtn = document.getElementById("phone-button");
       if (phoneBtn) {
-        phoneBtn.href = `tel:${phoneNumber.replace(/\s+/g, "")}`;
+        phoneBtn.href = telHref;
       }
   
-      // Update separate text display
+      // Optional phone-text element
       const phoneTextEl = document.getElementById("phone-text");
       if (phoneTextEl) {
         phoneTextEl.textContent = phoneNumber;
@@ -70,21 +72,22 @@ async function setPhoneNumberBasedOnLocation() {
   
       const defaultPhone = "+971505682557";
       const defaultAddress = "Sultan Business Centre, Oud Mehta, Dubai, UAE. PO BOX - 554617";
+      const telDefault = `tel:${defaultPhone.replace(/\s+/g, "")}`;
   
       const phoneLink = document.getElementById("phone-link");
       if (phoneLink) {
         phoneLink.textContent = defaultPhone;
-        phoneLink.href = `tel:${defaultPhone.replace(/\s+/g, "")}`;
+        phoneLink.href = telDefault;
       }
   
-      const addressElement = document.getElementById("address");
-      if (addressElement) {
-        addressElement.textContent = defaultAddress;
+      const addressEl = document.getElementById("address");
+      if (addressEl) {
+        addressEl.textContent = defaultAddress;
       }
   
       const phoneBtn = document.getElementById("phone-button");
       if (phoneBtn) {
-        phoneBtn.href = `tel:${defaultPhone.replace(/\s+/g, "")}`;
+        phoneBtn.href = telDefault;
       }
   
       const phoneTextEl = document.getElementById("phone-text");

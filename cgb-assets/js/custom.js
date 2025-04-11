@@ -33,7 +33,6 @@ async function setPhoneNumberBasedOnLocation() {
 
       const isIndia = data.country_name === "India";
       const phoneNumber = isIndia ? "+91 9888912909" : "+971505682557";
-      const phoneButton = isIndia ? "+91 9888912909" : "+971505682557";
       const address = isIndia
         ? "2nd Floor, No.112, AKR Tech Park, 7th Mile Hosur Rd, Bengaluru, Karnataka-560068"
         : "Sultan Business Centre, Oud Mehta, Dubai, UAE. PO BOX - 554617";
@@ -42,10 +41,6 @@ async function setPhoneNumberBasedOnLocation() {
       const phoneLink = document.getElementById("phone-link");
       phoneLink.textContent = phoneNumber;
       phoneLink.href = `tel:${phoneNumber.replace(/\s+/g, "")}`; // Remove spaces for tel:
-
-      // Update visible text and link
-      const phoneBtn = document.getElementById("phone-button");
-      phoneBtn.href = `tel:${phoneButton.replace(/\s+/g, "")}`; // Remove spaces for tel:
 
       // Update address
       document.getElementById("address").textContent = address;
@@ -68,7 +63,6 @@ async function setPhoneNumberBasedOnLocation() {
   }
 
   window.addEventListener("DOMContentLoaded", setPhoneNumberBasedOnLocation);
-
 
   
 

@@ -39,7 +39,7 @@ async function setPhoneNumberBasedOnLocation() {
   
       const telHref = `tel:${phoneNumber.replace(/\s+/g, "")}`;
   
-      // Update main phone link
+      // Update all main phone links (still assuming only one)
       const phoneLink = document.getElementById("phone-link");
       if (phoneLink) {
         phoneLink.textContent = phoneNumber;
@@ -52,17 +52,15 @@ async function setPhoneNumberBasedOnLocation() {
         addressEl.textContent = address;
       }
   
-      // Optional phone-button element
-      const phoneBtn = document.getElementById("phone-button");
-      if (phoneBtn) {
-        phoneBtn.href = telHref;
-      }
+      // Update all <a class="phone-button">
+      document.querySelectorAll(".phone-button").forEach((el) => {
+        el.href = telHref;
+      });
   
-      // Optional phone-text element
-      const phoneTextEl = document.getElementById("phone-text");
-      if (phoneTextEl) {
-        phoneTextEl.textContent = phoneNumber;
-      }
+      // Update all <span class="phone-text">
+      document.querySelectorAll(".phone-text").forEach((el) => {
+        el.textContent = phoneNumber;
+      });
   
       console.log("Detected Country:", data.country_name);
       console.log("Phone Number Selected:", phoneNumber);
@@ -85,15 +83,15 @@ async function setPhoneNumberBasedOnLocation() {
         addressEl.textContent = defaultAddress;
       }
   
-      const phoneBtn = document.getElementById("phone-button");
-      if (phoneBtn) {
-        phoneBtn.href = telDefault;
-      }
+      // Update all <a class="phone-button">
+      document.querySelectorAll(".phone-button").forEach((el) => {
+        el.href = telDefault;
+      });
   
-      const phoneTextEl = document.getElementById("phone-text");
-      if (phoneTextEl) {
-        phoneTextEl.textContent = defaultPhone;
-      }
+      // Update all <span class="phone-text">
+      document.querySelectorAll(".phone-text").forEach((el) => {
+        el.textContent = defaultPhone;
+      });
     }
   }
   

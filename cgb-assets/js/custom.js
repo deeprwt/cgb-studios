@@ -64,3 +64,29 @@ async function setPhoneNumberBasedOnLocation() {
 
   window.addEventListener("DOMContentLoaded", setPhoneNumberBasedOnLocation);
 
+
+  async function updateCallButtonHref() {
+    try {
+      const response = await fetch("https://ipapi.co/json/");
+      const data = await response.json();
+
+      const isIndia = data.country_name === "India";
+      const callPhone = isIndia ? "+91 9888912909" : "+971505682557";
+
+      const callBtn = document.getElementById("call-button");
+      if (callBtn) {
+        callBtn.href = `tel:${callPhone.replace(/\s+/g, "")}`;
+      }
+
+    } catch (error) {
+      console.error("Geolocation fetch error:", error);
+      const fallbackPhone = "+971505682557";
+      const callBtn = document.getElementById("call-button");
+      if (callBtn) {
+        callBtn.href = `tel:${fallbackPhone.replace(/\s+/g, "")}`;
+      }
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", updateCallButtonHref);
+

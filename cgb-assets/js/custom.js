@@ -33,7 +33,7 @@ async function setPhoneNumberBasedOnLocation() {
       const data = await response.json();
       console.log("User Country:", data.country_name); // For debugging
       const isIndia = data.country_name === "India";
-      const phoneNumber = isIndia ? "+9888912909" : "+971505682557";
+      const phoneNumber = isIndia ? "+91 9888912909" : "+971505682557";
       const address = isIndia
         ? "2nd Floor, No.112, AKR Tech Park, 7th Mile Hosur Rd, Bengaluru, Karnataka-560068"
         : "Sultan Business Centre, Oud Mehta, Dubai, UAE. PO BOX - 554617";

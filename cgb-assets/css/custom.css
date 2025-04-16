@@ -566,3 +566,14 @@ textarea,.form-select {
   transform: scaleX(-1);
     display: inline-block;
 }
+
+.custom .border {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom .border:hover{
+  border: 1px solid #9b17ff!important;
+    box-shadow: 0 16px 40px rgb(213 202 221 / 93%)!important;
+    border-radius: 5px!important;
+    cursor: pointer;
+}

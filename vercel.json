@@ -1,10 +1,9 @@
 {
-    "redirects": [
-      {
-        "source": "/:folder/index.html",
-        "destination": "/:folder/",
-        "permanent": true
-      }
-    ]
-  }
-  
+  "redirects": [
+    {
+      "source": "/:folder*/index.html",
+      "destination": "/:folder*/",
+      "permanent": true
+    }
+  ]
+}

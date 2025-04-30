@@ -96,6 +96,60 @@ async function setPhoneNumberBasedOnLocation() {
   }
   
   window.addEventListener("DOMContentLoaded", setPhoneNumberBasedOnLocation);
+
+
+  // owl owlCarousel testimonals  
+  $(':is(#owl_slider_1, #owl_slider_1)').owlCarousel({
+    center: true,
+    loop: true,
+    nav: true,
+    navText: ["<i class='fa-solid fa-angle-left'>", "<i class='fa-solid fa-angle-right'>"],
+    // mouseDrag: true,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayHoverPause: true,
+    margin: 10,
+    responsive: {
+        0: {
+            items: 1,
+            dots: false,
+            nav: false,
+        },
+
+        768: {
+            items: 2,
+            dots: false,
+            nav: false,
+        },
+
+        991: {
+            items: 3
+        }
+    },
+});
+$('#owl_slider_2').owlCarousel({
+    items: 2,
+    loop: true,
+    nav: true,
+    navText: ["<i class='fa-solid fa-angle-left'>", "<i class='fa-solid fa-angle-right'>"],
+    // mouseDrag: true,
+    // center:true,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayHoverPause: true,
+    margin: 10,
+    responsive: {
+        0: {
+            items: 1,
+            dots: false,
+            // nav: false,
+        },
+
+        600: {
+    items: 2 
+  }
+    },
+});
   
 
 

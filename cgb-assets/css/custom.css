@@ -875,6 +875,19 @@ padding-bottom: 100px;
 .advertisers-service-sec .service-card:hover p {
   color: #f0f0f0;
 }
+.advertisers-service-sec .service-card:hover ul li {
+  color: #f0f0f0;
+}
+
+.collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.collapsible.expanded {
+  max-height: 500px; /* Adjust as needed */
+}
 
 /* ADVERTISERS SERVICE CARD ENDED */
 
@@ -899,3 +912,26 @@ padding-bottom: 100px;
   border-radius: 10px;
   right: 37%;
 }
+
+.cgb-overlap {
+  color: var(--e-global-color-c804364);
+  font-family: "Manrope", Sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .cgb-overlap {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+/* .toggleBtn{
+  background: none;
+  border: none;
+  color: white;
+  padding: 0px;
+} */

@@ -1217,96 +1217,9 @@
       data-rocket-defer
       defer
     ></script>
-    <script
-      src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
-    <script type="rocketlazyloadscript">
-      document.addEventListener("DOMContentLoaded", function() {
-        gsap.registerPlugin(ScrollTrigger);
 
-        const cards = document.querySelectorAll('.stack-carddd');
-        const lastCard = cards[cards.length - 1];
 
-        gsap.config({
-          nullTargetWarn: false,
-          force3D: false
-        });
-
-        const minScale = 0.7;
-        const maxScale = 1;
-        const totalCards = cards.length;
-        const scaleStep = (maxScale - minScale) / (totalCards - 1);
-
-        let baseEndValue = 15;
-        if (totalCards > 6) {
-          baseEndValue += (totalCards - 6) * -3;
-        }
-
-        cards.forEach((card, index) => {
-          const internalElement = card.querySelector('.stack-card-internal');
-
-          let scaleValue = minScale + (index * scaleStep);
-
-          gsap.to(card, {
-            scale: scaleValue,
-            transformOrigin: 'top',
-            scrollTrigger: {
-              trigger: card,
-              start: `top ${index * 3 + 10 + 10}%`,
-              endTrigger: lastCard,
-              end: `top center-=${baseEndValue}%`,
-              scrub: true,
-              pin: card !== lastCard,
-              pinSpacing: false,
-              anticipatePin: 0.5,
-              onEnter: () => gsap.set(card, { willChange: 'transform' }),
-              onLeave: () => gsap.set(card, { willChange: '' }),
-              onEnterBack: () => gsap.set(card, { willChange: 'transform' }),
-              onLeaveBack: () => gsap.set(card, { willChange: '' }),
-            },
-          });
-
-          if (internalElement && card !== lastCard) {
-            gsap.timeline({
-              scrollTrigger: {
-                trigger: card,
-                start: `top ${index * 3 + 10 + 10}%`,
-                endTrigger: lastCard,
-                end: 'top top',
-                scrub: 15,
-              }
-            });
-          } else if (card === lastCard) {
-            gsap.to(card, {
-              scrollTrigger: {
-                trigger: card,
-                start: `top ${index * 3 + 10 + 10}%`,
-                end: `top ${index * 3 + 10 + 10}%`,
-                scrub: true,
-                pin: true,
-                pinSpacing: false,
-                anticipatePin: 0.5,
-              },
-            });
-          }
-        });
-
-        let refreshCount = 0;
-        const refreshInterval = setInterval(() => {
-          ScrollTrigger.refresh();
-          refreshCount++;
-          if (refreshCount >= 5) {
-            clearInterval(refreshInterval);
-          }
-        }, 1000);
-
-        ScrollTrigger.refresh();
-      });
-    </script>
 
     <script
       type="rocketlazyloadscript"

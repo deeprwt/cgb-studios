@@ -810,7 +810,7 @@ padding-bottom: 100px;
   overflow: hidden;
   background: #fff;
 }
-
+/* 
 .advertisers-service-sec .service-card::after {
   content: "";
   width: 100%;
@@ -821,7 +821,7 @@ padding-bottom: 100px;
   top: -98%;
   z-index: -2;
   transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
-}
+} */
 
 .advertisers-service-sec h3 {
   font-size: 20px;
@@ -848,11 +848,15 @@ padding-bottom: 100px;
   /* height: 2.5em;
   width: 2.5em; */
   color: #ffffff;
-  /* border-radius: 50%; */
+  /* border-radius: 15px; */
   display: grid;
   place-items: center;
   transition: 0.5s;
   z-index: 3;
+}
+
+.icon-wrapper img{
+    border-radius: 15px;
 }
 
 .advertisers-service-sec .service-card:hover:after {
@@ -868,7 +872,7 @@ padding-bottom: 100px;
   color: #0dcaf0;
 }
 
-.advertisers-service-sec .service-card:hover h3 {
+/* .advertisers-service-sec .service-card:hover h3 {
   color: #ffffff;
 }
 
@@ -877,7 +881,9 @@ padding-bottom: 100px;
 }
 .advertisers-service-sec .service-card:hover ul li {
   color: #f0f0f0;
-}
+} */
+
+
 
 .collapsible {
   max-height: 0;
@@ -890,6 +896,8 @@ padding-bottom: 100px;
 }
 
 /* ADVERTISERS SERVICE CARD ENDED */
+
+
 
 .service_btns{
   background: linear-gradient(to bottom, rgb(87 49 130), rgb(72 41 93));
@@ -920,6 +928,12 @@ padding-bottom: 100px;
   font-weight: 600;
   line-height: 60px;
   text-align: center;
+}
+
+.service-card:hover{
+  /* border: 1px solid #9b17ff !important; */
+    box-shadow: 0 16px 40px rgb(213 202 221 / 93%) !important;
+    border-radius: 5px !important;
 }
 
 @media only screen and (max-width: 768px) {

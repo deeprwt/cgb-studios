@@ -437,6 +437,8 @@
     />
     <link rel="stylesheet" href="/cgb-assets/css/home.css" />
     <link rel="stylesheet" href="/cgb-assets/css/custom.css" />
+    <link rel="stylesheet" href="/cgb-assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/cgb-assets/css/owl.theme.green.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -1546,6 +1548,124 @@
       </div>
       <!-- overlay sections  -->
 
+            <!-- TESTIMONIALS section start here  -->
+            <div
+            data-wpr-lazyrender="1"
+            class="elementor-element elementor-element-0bed87d e-flex e-con-boxed e-con e-parent"
+            data-id="0bed87d"
+            data-element_type="container"
+          >
+            <div class="e-con-inner">
+              <div
+                class="elementor-element elementor-element-9d608fc e-flex e-con-boxed e-con e-child"
+                data-id="9d608fc"
+                data-element_type="container"
+              >
+                <div class="e-con-inner">
+                  <div
+                    class="elementor-element elementor-element-879ada2 elementor-widget elementor-widget-heading"
+                    data-id="879ada2"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h6 class="elementor-heading-title elementor-size-default">
+                        TESTIMONIALS
+                      </h6>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-7cc5a81 elementor-widget elementor-widget-heading"
+                    data-id="7cc5a81"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h4 class="elementor-heading-title elementor-size-default">
+                        Words from <font color="#733895">Our Valued Clients </font>
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-cea52a6 e-con-full e-flex e-con e-child"
+                    data-id="cea52a6"
+                    data-element_type="container"
+                  >
+                    <div class="owl-carousel owl-theme" id="owl_slider_2">
+                      <div class="item mx-2">
+                        <div class="card-box-3">
+                          <div class="content-box2 pt-4">
+                            <p class="pt-y2 text-white">
+                              Collaborating with CGB Studios was pure bliss. They
+                              completely got our vision and assisted us in creating
+                              a digital presence that captures the essence of our
+                              revered idols. Their professionalism and creativity
+                              ensured the process was effortless. Strongly
+                              recommended for brands seeking real and interesting
+                              content!
+                            </p>
+                          </div>
+                          <div class="review-box">
+                            <div class="image-box2">
+                              <img
+                                src="https://www.cgb-studios.com/wp-content/uploads/2025/01/eximius-logo.webp"
+                                alt
+                                class="img-fluid"
+                                width="100"
+                              />
+                            </div>
+                            <div class="user-review">
+                              <cite class="elementor-testimonial__cite">
+                                <div class="client_name">Pearl Agarwal</div>
+                                <div class="client-text">
+                                  Founder and Managing Director at NIKUR ESSENCE
+                                </div>
+                              </cite>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item mx-2">
+                        <div class="card-box-3">
+                          <div class="content-box2 pt-4">
+                            <p class="pt-y2 text-white">
+                              Collaborating with CGB Studios was pure bliss. They
+                              completely got our vision and assisted us in creating
+                              a digital presence that captures the essence of our
+                              revered idols. Their professionalism and creativity
+                              ensured the process was effortless. Strongly
+                              recommended for brands seeking real and interesting
+                              content!
+                            </p>
+                          </div>
+                          <div class="review-box">
+                            <div class="image-box2">
+                              <img
+                                src="https://www.cgb-studios.com/wp-content/uploads/2025/01/eximius-logo.webp"
+                                alt
+                                class="img-fluid"
+                                width="100"
+                              />
+                            </div>
+                            <div class="user-review">
+                              <cite class="elementor-testimonial__cite">
+                                <div class="client_name">Pearl Agarwal</div>
+                                <div class="client-text">
+                                  Founder and Managing Director at NIKUR ESSENCE
+                                </div>
+                              </cite>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TESTIMONIALS section end here  -->
+
       <!-- Dynamic testimonial code in id testimonial -->
       <div id="testimonial"></div>
       <!-- Placeholder for testimonial -->
@@ -1724,35 +1844,7 @@
     <div id="footer"></div>
     <!-- Placeholder for header -->
 
-    <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
-      var sbiajaxurl = "wp-admin/admin-ajax.html";
-    </script>
-    <script type="rocketlazyloadscript">
-      const lazyloadRunObserver = () => {
-      	const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-      	const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-      		entries.forEach( ( entry ) => {
-      			if ( entry.isIntersecting ) {
-      				let lazyloadBackground = entry.target;
-      				if( lazyloadBackground ) {
-      					lazyloadBackground.classList.add( 'e-lazyloaded' );
-      				}
-      				lazyloadBackgroundObserver.unobserve( entry.target );
-      			}
-      		});
-      	}, { rootMargin: '200px 0px 200px 0px' } );
-      	lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-      		lazyloadBackgroundObserver.observe( lazyloadBackground );
-      	} );
-      };
-      const events = [
-      	'DOMContentLoaded',
-      	'elementor/lazyload/observe',
-      ];
-      events.forEach( ( event ) => {
-      	document.addEventListener( event, lazyloadRunObserver );
-      } );
-    </script>
+
     <link
       rel="stylesheet"
       id="jeg-dynamic-style-css"
@@ -2147,7 +2239,8 @@
         })
         .catch((error) => console.error("Error loading footer:", error));
     </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/cgb-assets/js/owl.carousel.js"></script>
     <script src="/cgb-assets/js/script.js"></script>
     <script src="/cgb-assets/js/custom.js"></script>
     <script

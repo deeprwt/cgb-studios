@@ -669,36 +669,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Placeholder for header -->
 
 
-    <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
-      var sbiajaxurl = "wp-admin/admin-ajax.html";
-    </script>
 
-    <script type="rocketlazyloadscript">
-      const lazyloadRunObserver = () => {
-      	const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-      	const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-      		entries.forEach( ( entry ) => {
-      			if ( entry.isIntersecting ) {
-      				let lazyloadBackground = entry.target;
-      				if( lazyloadBackground ) {
-      					lazyloadBackground.classList.add( 'e-lazyloaded' );
-      				}
-      				lazyloadBackgroundObserver.unobserve( entry.target );
-      			}
-      		});
-      	}, { rootMargin: '200px 0px 200px 0px' } );
-      	lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-      		lazyloadBackgroundObserver.observe( lazyloadBackground );
-      	} );
-      };
-      const events = [
-      	'DOMContentLoaded',
-      	'elementor/lazyload/observe',
-      ];
-      events.forEach( ( event ) => {
-      	document.addEventListener( event, lazyloadRunObserver );
-      } );
-    </script>
+
     <link
       rel="stylesheet"
       id="jeg-dynamic-style-css"

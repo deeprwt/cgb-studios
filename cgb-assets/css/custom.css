@@ -38,6 +38,12 @@ h4 {
   letter-spacing: var(--e-global-typography-faa05e1-letter-spacing);
 }
 
+.custom .text-heading {
+  font-size: var(--e-global-typography-fd21e42-font-size)!important;
+  line-height: var(--e-global-typography-faa05e1-line-height);
+  letter-spacing: var(--e-global-typography-faa05e1-letter-spacing);
+}
+
 .custom h3 {
   font-size: var(--e-global-typography-f558570-font-size);
   font-weight: var(--e-global-typography-f558570-font-weight);

@@ -975,3 +975,14 @@ padding-bottom: 100px;
   color: white;
   padding: 0px;
 } */
+
+
+.lines {
+    font-size: calc(1.325rem + .9vw) !important;
+}
+
+@media (min-width: 1200px) {
+    .lines {
+        font-size: 2rem!important;
+    }
+}

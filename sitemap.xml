@@ -1,123 +1,150 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://www.cgb-studios.com/</loc>
-<lastmod>2025-06-09T18:20:42+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/</loc>
-<lastmod>2025-06-10T06:11:45+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/contact-us/</loc>
-<lastmod>2025-06-10T06:11:45+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/app-development/</loc>
-<lastmod>2025-06-10T06:11:45+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/web-development/</loc>
-<lastmod>2025-06-10T06:11:46+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/seo/</loc>
-<lastmod>2025-06-10T06:11:46+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/performance-marketing/</loc>
-<lastmod>2025-06-10T06:11:46+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/content-marketing/</loc>
-<lastmod>2025-06-10T06:11:46+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/custom-website-development/</loc>
-<lastmod>2025-06-10T06:11:46+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/e-commerce-website-development/</loc>
-<lastmod>2025-06-10T06:11:46+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/shopify-website-development/</loc>
-<lastmod>2025-06-10T06:11:47+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/wordpress-web-development/</loc>
-<lastmod>2025-06-10T06:11:47+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/app-store-optimization/</loc>
-<lastmod>2025-06-10T06:11:47+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/mobile-app-marketing-services/</loc>
-<lastmod>2025-06-10T06:11:47+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/paid-app-marketing-services/</loc>
-<lastmod>2025-06-10T06:11:47+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/mobile-application-development/</loc>
-<lastmod>2025-06-10T06:11:47+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/e-commerce-seo/</loc>
-<lastmod>2025-06-10T06:11:48+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/link-building-services/</loc>
-<lastmod>2025-06-10T06:11:48+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/local-seo/</loc>
-<lastmod>2025-06-10T06:11:48+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/technical-seo/</loc>
-<lastmod>2025-06-10T06:11:48+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/google-ads/</loc>
-<lastmod>2025-06-10T06:11:48+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/lead-generation/</loc>
-<lastmod>2025-06-10T06:11:48+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/facebook-marketing-solutions/</loc>
-<lastmod>2025-06-10T06:11:49+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.cgb-studios.com/services/linkedIn-marketing/</loc>
-<lastmod>2025-06-10T06:11:49+00:00</lastmod>
-<priority>0.64</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+  <url>
+    <loc>https://www.cgb-studios.com/</loc>
+    <lastmod>2025-06-09T18:20:42+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/about-us/</loc>
+    <lastmod>2025-06-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/blogs/</loc>
+    <lastmod>2025-06-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/blogs/best-digital-marketing-company-in-uae/</loc>
+    <lastmod>2025-06-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://www.cgb-studios.com/blogs/boost-business-growth-with-social-media-optimization-smo/</loc>
+    <lastmod>2025-06-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+    <url>
+    <loc>https://www.cgb-studios.com/blogs/the-art-of-storytelling-in-content-writing/</loc>
+    <lastmod>2025-06-10</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/</loc>
+    <lastmod>2025-06-10T06:11:45+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/contact-us/</loc>
+    <lastmod>2025-06-10T06:11:45+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/app-development/</loc>
+    <lastmod>2025-06-10T06:11:45+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/web-development/</loc>
+    <lastmod>2025-06-10T06:11:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/seo/</loc>
+    <lastmod>2025-06-10T06:11:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/performance-marketing/</loc>
+    <lastmod>2025-06-10T06:11:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/content-marketing/</loc>
+    <lastmod>2025-06-10T06:11:46+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/custom-website-development/</loc>
+    <lastmod>2025-06-10T06:11:46+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/e-commerce-website-development/</loc>
+    <lastmod>2025-06-10T06:11:46+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/shopify-website-development/</loc>
+    <lastmod>2025-06-10T06:11:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/wordpress-web-development/</loc>
+    <lastmod>2025-06-10T06:11:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/app-store-optimization/</loc>
+    <lastmod>2025-06-10T06:11:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/mobile-app-marketing-services/</loc>
+    <lastmod>2025-06-10T06:11:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/paid-app-marketing-services/</loc>
+    <lastmod>2025-06-10T06:11:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/mobile-application-development/</loc>
+    <lastmod>2025-06-10T06:11:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/e-commerce-seo/</loc>
+    <lastmod>2025-06-10T06:11:48+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/link-building-services/</loc>
+    <lastmod>2025-06-10T06:11:48+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/local-seo/</loc>
+    <lastmod>2025-06-10T06:11:48+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/technical-seo/</loc>
+    <lastmod>2025-06-10T06:11:48+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/google-ads/</loc>
+    <lastmod>2025-06-10T06:11:48+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/lead-generation/</loc>
+    <lastmod>2025-06-10T06:11:48+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/facebook-marketing-solutions/</loc>
+    <lastmod>2025-06-10T06:11:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.cgb-studios.com/services/linkedIn-marketing/</loc>
+    <lastmod>2025-06-10T06:11:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
 </urlset>

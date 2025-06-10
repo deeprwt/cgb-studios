@@ -1,8 +1,13 @@
 {
   "redirects": [
     {
-      "source": "/:folder*/index.html",
-      "destination": "/:folder*/",
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*/index.html",
+      "destination": "/:path*/",
       "permanent": true
     }
   ]

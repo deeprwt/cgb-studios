@@ -746,7 +746,7 @@ border-radius: 10px;
 }
 .client_name{
 font-weight: 600;
-color: #34E08E;
+color: #d097ff;
 }
 .space{
 padding-block: 100px;
@@ -975,6 +975,18 @@ padding-bottom: 100px;
   color: white;
   padding: 0px;
 } */
+
+.content-box2 p{
+  color: white;
+}
+
+.testimonial  .owl-nav{
+  display: none;
+}
+
+.testimonial  .owl-dots{
+  padding-top:20px;
+}
 
 
 .lines {

@@ -69,7 +69,7 @@ header{
     height: auto;
     border-bottom: 1px solid #ddd;
     margin-top: 30px;
-    background-image: url(../images/bg002.png);
+    background-image: url(../images/bgnew2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom right;
@@ -142,15 +142,16 @@ header{
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 40px;
+        margin-top: 30px;
     margin-right: 15%;
     box-shadow: 0px 0px 23px rgb(0 0 0 / 31%);
 }
 .bnrform h3{
     margin-top: 0px;
-    font-size: 22px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    line-height: 26px;
+    font-size: 22px!important;
+    margin-bottom: 20px!important;
+    font-weight: 600!important;
+    line-height: 26px!important;
 }
 .bnrform form{
     float: left;
@@ -926,4 +927,8 @@ display: block !important;
 
 .servicebox0001 img {
     width: 50px;
+}
+
+.icon-box li{
+    background-color: white;
 }

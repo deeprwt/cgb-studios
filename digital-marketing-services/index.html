@@ -195,19 +195,13 @@
               Get a <strong>FREE 30-Minute Strategy Call</strong> with Our
               Marketing Experts.
             </p>
-           <form id="leadForm">
+            <form id="leadForm">
               <!-- Replace with your Access Key -->
               <input
                 type="hidden"
                 name="access_key"
                 value="9c2f7584-bf96-4b92-a5bd-70288fe476bd"
               />
-              <!-- ✅ Correct. Full URL with https:// -->
-              <!-- <input
-                type="hidden"
-                name="redirect"
-                value="https://www.cgb-studios.com/thank-you/"
-              /> -->
               <div class="mb-3">
                 <input
                   name="name"
@@ -237,12 +231,42 @@
               </div>
               <div class="mb-3">
                 <input
-                  name="compnay"
+                  name="company"
                   type="text"
                   placeholder="Company Name*"
                   class="form-control"
                   required
                 />
+              </div>
+              <div class="mb-3">
+                <select name="service" required class="form-control">
+                  <option value="">Select Service*</option>
+                  <option value="Complete Digital Marketing Solutions">
+                    Complete Digital Marketing Solutions
+                  </option>
+                  <option value="Website Development">
+                    Website Development
+                  </option>
+                  <option value="Paid Advertising">Paid Advertising</option>
+                  <option value="Search Engine Optimization">SEO</option>
+                  <option value="Lead Generation">Lead Generation</option>
+                  <option value="Performance Marketing">
+                    Performance Marketing
+                  </option>
+                  <option value="Social Media Marketing">
+                    Social Media Marketing
+                  </option>
+                  <option value="Content Marketing">Content Marketing</option>
+                  <option value="Email Marketing">Email Marketing</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  name="message"
+                  placeholder="Message*"
+                  class="form-control"
+                  required
+                ></textarea>
               </div>
               <button
                 type="submit"
@@ -262,7 +286,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2 data-aos="fade-right">Everything You Need From </h2>
+            <h2 data-aos="fade-right">Everything You Need From</h2>
 
             <h1 data-aos="fade-right">
               CGB Studios, <span id="example"></span>
@@ -301,19 +325,7 @@
             <div class="bnrform" data-aos="fade-left">
               <h3>Book Your Free Strategy Call</h3>
 
-              <form action="https://api.web3forms.com/submit" method="POST">
-                <!-- Replace with your Access Key -->
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="b153dd49-d1e5-42a2-b0b0-6093839ad313"
-                />
-                <!-- ✅ Correct. Full URL with https:// -->
-                <input
-                  type="hidden"
-                  name="redirect"
-                  value="https://www.cgb-studios.com/thank-you/"
-                />
+              <form id="contactForm" class="google-sheet-form">
                 <ul>
                   <li>
                     <input
@@ -323,7 +335,6 @@
                       required
                     />
                   </li>
-
                   <li>
                     <input
                       name="email"
@@ -332,7 +343,6 @@
                       required
                     />
                   </li>
-
                   <li>
                     <input
                       name="number"
@@ -343,13 +353,12 @@
                   </li>
                   <li>
                     <input
-                      name="compnay"
+                      name="company"
                       type="text"
                       placeholder="Company Name*"
                       required
                     />
                   </li>
-
                   <li>
                     <select name="service" required>
                       <option value="">Select Service*</option>
@@ -361,24 +370,19 @@
                       </option>
                       <option value="Paid Advertising">Paid Advertising</option>
                       <option value="Search Engine Optimization">SEO</option>
-
                       <option value="Lead Generation">Lead Generation</option>
-                      <option value="Perfromance Marketing">
-                        Perfromance Marketing
+                      <option value="Performance Marketing">
+                        Performance Marketing
                       </option>
-
                       <option value="Social Media Marketing">
                         Social Media Marketing
                       </option>
-
                       <option value="Content Marketing">
                         Content Marketing
                       </option>
-
                       <option value="Email Marketing">Email Marketing</option>
                     </select>
                   </li>
-
                   <li>
                     <textarea
                       name="message"
@@ -386,11 +390,8 @@
                       required
                     ></textarea>
                   </li>
-
                   <li>
-                    <button type="submit" name="send" value="sendMail">
-                      Connect With Marketing Team
-                    </button>
+                    <button type="submit">Connect With Marketing Team</button>
                   </li>
                 </ul>
               </form>
@@ -999,20 +1000,8 @@
             <div class="bnrform" data-aos="fade-right">
               <h3>Book Your Free Strategy Call</h3>
 
-              <form action="https://api.web3forms.com/submit" method="POST">
-                <!-- Replace with your Access Key -->
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="b153dd49-d1e5-42a2-b0b0-6093839ad313"
-                />
-                <!-- ✅ Correct. Full URL with https:// -->
-                <input
-                  type="hidden"
-                  name="redirect"
-                  value="https://www.cgb-studios.com/thank-you/"
-                />
-                <ul style="list-style: none">
+              <form class="google-sheet-form">
+                <ul style="list-style: none; padding-left: 0rem">
                   <li>
                     <input
                       name="name"
@@ -1041,7 +1030,7 @@
                   </li>
                   <li>
                     <input
-                      name="compnay"
+                      name="company"
                       type="text"
                       placeholder="Company Name*"
                       required
@@ -1272,6 +1261,7 @@
     </script>
 
     <script src="js/aos.js"></script>
+    <script src="js/custom.js"></script>
 
     <script>
       AOS.init({
@@ -1279,51 +1269,21 @@
 
         duration: 1000,
       });
-
     </script>
 
-<script>
-  window.addEventListener("load", function () {
-    const formSubmitted = sessionStorage.getItem("leadFormSubmitted");
+    <!-- <script>
+      window.addEventListener("load", function () {
+        const formSubmitted = sessionStorage.getItem("leadFormSubmitted");
 
-    if (!formSubmitted) {
-      setTimeout(function () {
-        var myModal = new bootstrap.Modal(document.getElementById("leadModal"));
-        myModal.show();
-      }, 4000);
-    }
-  });
-
-  const form = document.getElementById("leadForm");
-
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
+        if (!formSubmitted) {
+          setTimeout(function () {
+            var myModal = new bootstrap.Modal(
+              document.getElementById("leadModal")
+            );
+            myModal.show();
+          }, 4000);
+        }
       });
-
-      const result = await response.json();
-
-      if (result.success) {
-        // ✅ Store session so modal won't reopen
-        sessionStorage.setItem("leadFormSubmitted", "true");
-
-        // ✅ Redirect to thank-you page
-        window.location.href = "https://www.cgb-studios.com/thank-you/";
-      } else {
-        alert("❌ Submission failed. Please try again.");
-      }
-    } catch (error) {
-      console.error("Submission error:", error);
-      alert("⚠️ Something went wrong. Please try again.");
-    }
-  });
-</script>
-
+    </script> -->
   </body>
 </html>
